@@ -39,6 +39,9 @@ GET     /registrar                                      Usuarios.registrar
 # Home page
 *     /aviones                            		Aviones.index
 
+# Home page
+*     /avionesc                            		AvionesC.index
+
 # Catch all
 *       /{controller}/{action}                  {controller}.{action}
 #para crud
