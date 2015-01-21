@@ -4,11 +4,7 @@
 	
 	<h1>&{'secure.title'}</h1>
 		
-<<<<<<< HEAD
-	#{form @Secure.authenticate(username,password)}
-=======
 	#{form @authenticate()}
->>>>>>> aae92803a5c674bacde532c2a8945cf70eb54fab
 		
 		#{if flash.error}
 			<p class="error">
@@ -23,19 +19,11 @@
 	
 		<p id="username-field">
 			<label for="username">&{'secure.username'}</label>
-<<<<<<< HEAD
-			<input type="text" name="username" id="username" value="${flash.username}" placeholder="example@gmail.com" />
-		</p>
-		<p id="password-field">
-			<label for="password">&{'secure.password'}</label>
-			<input type="password" name="password" id="password" value=""placeholder="******" />
-=======
 			<input type="text" name="username" id="username" value="${flash.username}" />
 		</p>
 		<p id="password-field">
 			<label for="password">&{'secure.password'}</label>
 			<input type="password" name="password" id="password" value="" />
->>>>>>> aae92803a5c674bacde532c2a8945cf70eb54fab
 		</p>
 		<p id="remember-field">
 			<input type="checkbox" name="remember" id="remember" value="true" ${flash.remember ? 'checked="true"' : ''} />
