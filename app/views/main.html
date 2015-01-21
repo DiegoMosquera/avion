@@ -86,11 +86,10 @@
 				<div class="wrap">
 				<div class="top-header-left">
 					<ul>
-<<<<<<< HEAD
+
 						#{if conectado }
 						<li><a href="#"><span> </span>${conectado}</a></li>		
 						<li><p><span> </span>#{if flash.confirmacion}
-							&{flash.confirmacion}
 						#{/if} </p>&nbsp;<a class="reg" href="/logout"> Salir</a></li>
 						#{/if}
 						#{else}
@@ -99,22 +98,7 @@
 							&{flash.confirmacion}
 						#{/if} </p>&nbsp;<a class="reg" href="/registrar"> Registraté</a></li>
 						#{/else}
-				
-=======
 						
-						<li><a href="/login"><span><p>#{if flash.confirmacion}
-								
-							#{/if}</p> </span>  Ingresar</a></li>
->>>>>>> d502b7b66587f96ad87ef1cf3ea6a0d893ce0271
-
-						<li><p><span> </span>
-							#{if flash.confirmacion}
-								&{flash.confirmacion}
-							#{/if} 
-							</p>&nbsp;<a class="reg" href="/registrar"> Registraté</a></li>
-								
-						
-
 						<div class="clear"> </div>
 					</ul>
 				</div>
