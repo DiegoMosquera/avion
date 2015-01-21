@@ -1,9 +1,20 @@
 package controllers;
 
-import models.Aerolinea;
-import play.mvc.Controller;
+import models.Usuario;
+import controllers.Secure.Security;
+import play.mvc.Before;
+import play.mvc.With;
 
+@With(Secure.class)
 public class Aerolineas extends CRUD{
+	
+	@Before
+    public static void mostrarUsuario(){
+    	Usuario user =  Usuario.find("byEmail",Security.connected()).first();
+    	if (Security.isConnected()){
+    		renderArgs.put("conectado",user.nombre+" "+user.apellido);
+    	}
+    }
 	/*
 	public static void index(){
 		render();
