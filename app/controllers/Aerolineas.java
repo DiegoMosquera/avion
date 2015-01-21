@@ -3,8 +3,8 @@ package controllers;
 import models.Aerolinea;
 import play.mvc.Controller;
 
-public class Aerolineas extends Controller {
-	
+public class Aerolineas extends CRUD{
+	/*
 	public static void index(){
 		render();
 	}
@@ -14,5 +14,6 @@ public class Aerolineas extends Controller {
 		nuevo.save();
 		redirect("/aerolineas");
 	}
+	*/
 
 }

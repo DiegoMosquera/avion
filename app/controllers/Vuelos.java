@@ -6,9 +6,9 @@ import models.Avion;
 import models.Vuelo;
 import play.mvc.Controller;
 
-public class Vuelos extends Controller {
+public class Vuelos extends CRUD {
 	
-	public static void index(){
+	/*public static void index(){
 		//aviones cargo todos los registro dela bdd
 		List<Avion> aviones=Avion.findAll();
 		render(aviones);
@@ -25,6 +25,6 @@ public class Vuelos extends Controller {
 		flash.put("error","No se pudo guardado");
 		redirect("/vuelos");
 		}
-	}
+	}*/
 
 }

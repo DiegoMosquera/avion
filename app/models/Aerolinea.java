@@ -13,6 +13,9 @@ public class Aerolinea extends Model {
 		this.nombre = nombre;
 		this.ruc = ruc;
 	}
-	
+
+	public String toString(){
+		return nombre;
+	}
 }
 

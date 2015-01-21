@@ -17,5 +17,17 @@ GET     /public/                                staticDir:public
 # Home page
 *     /vuelos                              		Vuelos.index
 
+# Home page
+*     /categorias                             	Categorias.index
+
+# Home page
+*     /aviones                            		Aviones.index
+
 # Catch all
 *       /{controller}/{action}                  {controller}.{action}
+#para crud
+
+*   	/admin									module:crud
+
+#para secure
+*		/										module:secure
