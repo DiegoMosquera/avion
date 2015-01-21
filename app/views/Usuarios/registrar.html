@@ -1,0 +1,26 @@
+#{extends "main.html" /}
+
+<br><center>
+<link href="@{'/public/stylesheets/registro.css'}" rel='stylesheet' type='text/css' />
+
+	#{form @Usuarios.guardar(nombre,apellido,email,password)}
+	
+   
+	
+	<div id="small-dialog">
+						<div class="signup">
+						
+						
+							
+							<h4>Introduzca sus datos aquí</h4><br>
+							<input type="text" id ="nombre" name="nombre" placeholder="Ingrese su Nombre"  required/><br><br>
+							<input type="text"  id="apellido" name ="apellido"placeholder="Ingrese su Apellido" required/><br><br>
+							<input type="email" id ="email" name="email" class="email"placeholder="Ingrese su Email" required /><br><br>
+							<input type="password" id ="password" name ="password"placeholder="Ingrese su Password" required /><br><br>
+								<button class="submit" type="submit">Registrar</button>
+						</div>
+					</div>	
+	#{/form}
+</center><br>
+
+

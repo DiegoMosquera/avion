@@ -18,6 +18,8 @@
 		<script src="@{'/public/javascripts/uisearch.js'}"></script>
 		<script defer src="@{'/public/javascripts/jquery.flexslider.js'}"></script>
         
+        
+        
         <link href="@{'/public/stylesheets/style.css'}" rel='stylesheet' type='text/css' />
         <link href="@{'/public/stylesheets/jquery.bxslider.css'}" rel="stylesheet"  type="text/css" />
         <link href="@{'/public/stylesheets/fwslider.css'}" rel="stylesheet" media="all">
@@ -85,8 +87,10 @@
 				<div class="top-header-left">
 					<ul>
 						<li><a href="#"><span> </span> Administrador</a></li>
-						<li><a href="#"><span> </span> Usuario</a></li>
-						<li><p><span> </span>No eres usuario ? </p>&nbsp;<a class="reg" href="#"> Registraté</a></li>
+						<li><a href="/login"><span> </span> Usuario</a></li>
+						<li><p><span> </span>#{if flash.confirmacion}
+							&{flash.confirmacion}
+						#{/if} </p>&nbsp;<a class="reg" href="/registrar"> Registraté</a></li>
 						<div class="clear"> </div>
 					</ul>
 				</div>

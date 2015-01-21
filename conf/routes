@@ -17,5 +17,14 @@ GET     /public/                                staticDir:public
 # Home page
 *     /vuelos                              		Vuelos.index
 
+# Reserva page
+GET     /registrar                                      Usuarios.registrar
+
 # Catch all
 *       /{controller}/{action}                  {controller}.{action}
+# Import CRUD routes
+*     /admin           module:crud
+
+
+# Import Secure routes
+*      /                module:secure
