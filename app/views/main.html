@@ -18,6 +18,8 @@
 		<script src="@{'/public/javascripts/uisearch.js'}"></script>
 		<script defer src="@{'/public/javascripts/jquery.flexslider.js'}"></script>
         
+        
+        
         <link href="@{'/public/stylesheets/style.css'}" rel='stylesheet' type='text/css' />
         <link href="@{'/public/stylesheets/jquery.bxslider.css'}" rel="stylesheet"  type="text/css" />
         <link href="@{'/public/stylesheets/fwslider.css'}" rel="stylesheet" media="all">
@@ -84,9 +86,20 @@
 				<div class="wrap">
 				<div class="top-header-left">
 					<ul>
+<<<<<<< HEAD
 						<li><a href="/login"><span> </span> Administrador</a></li>
 						<li><a href="#"><span> </span> Usuario</a></li>
+=======
+						<li><a href="#"><span> </span> Administrador</a></li>
+						<li><a href="/login"><span> </span> Usuario</a></li>
+<<<<<<< HEAD
+						<li><p><span> </span>#{if flash.confirmacion}
+							&{flash.confirmacion}
+						#{/if} </p>&nbsp;<a class="reg" href="/registrar"> Registraté</a></li>
+=======
+>>>>>>> 6e57f5d73b75dad67e7eea59f723d82104967a77
 						<li><p><span> </span>No eres usuario ? </p>&nbsp;<a class="reg" href="#"> Registraté</a></li>
+>>>>>>> aae92803a5c674bacde532c2a8945cf70eb54fab
 						<div class="clear"> </div>
 					</ul>
 				</div>
