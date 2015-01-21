@@ -1,0 +1,34 @@
+#{extends 'main.html'/}
+
+#{form @Vuelos.guardar(numerovuelo,fecha,horasalida,horallegada,origen,destino,puertaembarque,idAvion)}
+<center>
+#{if flash.confirmacion}
+		<span style="color:green;">&{flash.confirmacion}</span>
+#{/if}
+#{if flash.error}
+		&{flash.error}
+#{/if}
+	<div>
+		Numero de Vuelo: <br>	<input type="text" value="" name="numerovuelo" placeholder="Ingrese el numero de vuelo" required> <br>
+		Fecha: <br>  	 		<input type="text" value="" name="fecha" required>
+		<br>Hora de Salida: <br>  	<input type="text" value="" name="horasalida" required>
+		<br>Hora de Llegada: <br>  	<input type="text" value="" name="horallegada" required>
+		<br>Origen:   	 <br>		<input type="text" value="" name="origen" required>
+		<br>Destino:   	 <br>		<input type="text" value="" name="destino" required>
+		<br>Puerta de Embarque: <br><input type="text" value="" name="puertaembarque" required>
+		<br>
+		Avio:<br>
+		
+		<select id="idAvion" name="idAvion">
+
+			#{list items:aviones, as: 'avion'}
+			<option value="${avion.id}">${avion.placa} -- <h1>${avion.descripcion}</h1></option>
+			
+			#{/list}
+		
+		</select>
+		<br>
+		<input type="submit" value="GUARDAR">
+	</div>
+</center>
+#{/form}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>#{get 'title' /}</title>
+        <meta charset="${_response_encoding}">
+        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
+        #{get 'moreStyles' /}
+        <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
+        <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        <script src="@{'/public/javascripts/jquery.min.js'}"></script>
+        <script src="@{'/public/javascripts/jquery.bxslider.js'}"></script>
+        <script src="@{'/public/javascripts/flexy-menu.js'}" type="text/javascript"></script>
+        <script src="@{'/public/javascripts/jquery-ui.min.js'}"></script>
+		<script src="@{'/public/javascripts/fwslider.js'}"></script>
+		<script src="@{'/public/javascripts/modernizr.custom.js'}"></script>
+		<script src="@{'/public/javascripts/classie.js'}"></script>
+		<script src="@{'/public/javascripts/css3-mediaqueries.js'}"></script>
+		<script src="@{'/public/javascripts/uisearch.js'}"></script>
+		<script defer src="@{'/public/javascripts/jquery.flexslider.js'}"></script>
+        
+        <link href="@{'/public/stylesheets/style.css'}" rel='stylesheet' type='text/css' />
+        <link href="@{'/public/stylesheets/jquery.bxslider.css'}" rel="stylesheet"  type="text/css" />
+        <link href="@{'/public/stylesheets/fwslider.css'}" rel="stylesheet" media="all">
+        <link href="@{'/public/stylesheets/jquery-ui.css'}" />
+        <link href="@{'/public/stylesheets/flexslider.css'}" rel="stylesheet"  type="text/css" media="screen" />
+        #{get 'moreScripts' /}
+   	
+		<title>Voyage Website Template</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		
+		<!---script---->
+	
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('.bxslider').bxSlider({
+						 auto: true,
+ 						 autoControls: true,
+						 minSlides: 4,
+						 maxSlides: 4,
+						 slideWidth:450,
+						 slideMargin: 10
+					});
+				});
+			</script>
+		<!---//script---->
+		<!---smoth-scrlling---->
+			<script type="text/javascript">
+				$(document).ready(function(){
+									$('a[href^="#"]').on('click',function (e) {
+									    e.preventDefault();
+									    var target = this.hash,
+									    $target = $(target);
+									    $('html, body').stop().animate({
+									        'scrollTop': $target.offset().top
+									    }, 1000, 'swing', function () {
+									        window.location.hash = target;
+									    });
+									});
+								});
+				</script>
+		<!---//smoth-scrlling---->
+		<!----start-top-nav-script---->
+		
+		<script type="text/javascript">$(document).ready(function(){$(".flexy-menu").flexymenu({speed: 400,type: "horizontal",align: "right"});});</script>
+		<!----//End-top-nav-script---->
+		<!---webfonts---->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<!---webfonts---->
+		<!--start slider -->
+	    
+		<!--end slider -->
+		<!---calender-style---->
+		
+		<!---//calender-style---->
+	</head>
+	
+	<body>
+		<!----start-wrap---->
+			<!----start-top-header----->
+			<div class="top-header" id="header">
+				<div class="wrap">
+				<div class="top-header-left">
+					<ul>
+						<li><a href="#"><span> </span> Administrador</a></li>
+						<li><a href="#"><span> </span> Usuario</a></li>
+						<li><p><span> </span>No eres usuario ? </p>&nbsp;<a class="reg" href="#"> Registraté</a></li>
+						<div class="clear"> </div>
+					</ul>
+				</div>
+				<div class="top-header-right">
+					<ul>
+						<li><a class="face"><span> </span></a></li>
+						<li><a class="twit"><span> </span></a></li>
+						<li><a class="thum"><span> </span></a></li>
+						<li><a class="pin"><span> </span></a></li>
+						<div class="clear"> </div>
+					</ul>
+				</div>
+				<div class="clear"> </div>
+			</div>
+			</div>
+			<!----//End-top-header----->
+			<!---start-header---->
+			<div class="header">
+				<div class="wrap">
+				<!--- start-logo---->
+				<div class="logo">
+					<a href="index.html"><img src="@{'/public/images/logo.png'}" title="voyage" /></a>
+					<br>
+					<div class="holiday-type-grid" onclick="location.href='#';">
+							<a href="#">Aeropuerto Internacional</a>
+						</div>
+				</div>
+				<!--- //End-logo---->
+				<!--- start-top-nav---->
+				<div class="top-nav">
+						<ul class="flexy-menu thick orange">
+							<li class="active"><a href="/">Inicio</a></li>
+							<li><a href="/aerolineas">Aerolineas</a>
+							<li><a href="/vuelos">Vuelos</a></li>
+							<li><a href="destinations.html">Aviones</a></li>
+							<li><a href="destinations.html">Categorias</a></li>
+						</ul>
+						<div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+							</div>
+						</div>
+						<!----search-scripts---->
+						
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+						<!----//search-scripts---->
+				</div>
+				<!--- //End-top-nav---->
+				<div class="clear"> </div>
+			</div>
+			<!---//End-header---->
+		</div>
+		#{doLayout/}
+		<!----start-footer---->
+		<div class="footer">
+			<div class="wrap">
+				<div class="footer-grid address">
+					<h3>Dirección</h3>
+					<div class="address-info">
+						<span>Av.Las Américas</span><br>
+						<span>San Ándres Colombia</span>
+					</div>
+					<div class="clear"> </div>
+					</div>
+					<div class="footer-grid address">
+					<h3>Correo Electrónico</h3>
+					<div class="address-info">
+						<span><i></i><a>voyage@gmail.com</a></span>
+					</div>
+					<div class="clear"> </div>
+					</div>
+					<div class="footer-social-icons">
+						<div class="footer-grid address">
+						<h3>Siguenos en:</h3>
+						<ul>
+							<li><a class="face1 simptip-position-bottom simptip-movable" data-tooltip="facebook" href="#"><span> </span></a></li>
+							<li><a class="twit1 simptip-position-bottom simptip-movable" data-tooltip="twitter" href="#"><span> </span></a></li>
+							<li><a class="tub1 simptip-position-bottom simptip-movable" data-tooltip="tumblr" href="#"><span> </span></a></li>
+							<li><a class="pin1 simptip-position-bottom simptip-movable" data-tooltip="pinterest" href="#"><span> </span></a></li>
+							<div class="clear"> </div>
+						</ul>
+					</div>
+				</div>
+				<div class="clear"> </div>
+			</div>
+			</div>
+		</div>
+		<!----//End-footer---->
+		<!---start-subfooter---->
+		<div class="subfooter">
+			<div class="wrap">
+				<p class="copy-right">Template by <a href="http://w3layouts.com/">W3layouts</a></p>
+				<a class="to-top" href="#header"><span> </span> </a>
+			</div>
+		</div>
+		<!---//End-subfooter---->
+		<!----//End-wrap---->
+	</body>
+
+    
+
+   
+    
+</html>

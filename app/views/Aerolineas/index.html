@@ -1,0 +1,9 @@
+#{extends 'main.html'/}
+#{form @Aerolineas.guardar(nombre,ruc)}
+	<div>
+		Nombre: <input type="text" value="" name="nombre"> <br>
+		RUC:    <input type="text" value="" name="ruc">
+		<br>
+		<input type="submit" value="GUARDAR">
+	</div>
+#{/form}
