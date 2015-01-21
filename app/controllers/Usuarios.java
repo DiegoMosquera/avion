@@ -5,7 +5,7 @@ import models.Usuario;
 public class Usuarios extends Secure.Security {
 	static boolean authenticate(String username, String password){
 		Usuario u =Usuario.find("byEmail",username).first();
-		
+		flash.put("confirmacion",password);
 		return u !=null && u.password.equals(password);
 		
 	}

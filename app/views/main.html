@@ -87,12 +87,16 @@
 				<div class="top-header-left">
 					<ul>
 						
-						<li><a href="/login"><span> </span> Ingresar</a></li>
+						<li><a href="/login"><span><p>#{if flash.confirmacion}
+								
+							#{/if}</p> </span>  Ingresar</a></li>
 
-						<li><p><span> </span>#{if flash.confirmacion}
-							&{flash.confirmacion}
-						#{/if} </p>&nbsp;<a class="reg" href="/registrar"> Registraté</a></li>
-
+						<li><p><span> </span>
+							#{if flash.confirmacion}
+								&{flash.confirmacion}
+							#{/if} 
+							</p>&nbsp;<a class="reg" href="/registrar"> Registraté</a></li>
+								
 						
 
 						<div class="clear"> </div>
