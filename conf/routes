@@ -20,6 +20,10 @@ GET     /public/                                staticDir:public
 # Home page
 *     /vuelos                              		Vuelos.index
 
+# Home page
+*     /vuelosc                              	VuelosC.index
+
+
  HEAD
 # Reserva page
 GET     /registrar                                      Usuarios.registrar
@@ -35,6 +39,9 @@ GET     /registrar                                      Usuarios.registrar
 =======
 # Home page
 *     /categorias                             	Categorias.index
+
+# Home page
+*     /categoriasc                             	CategoriasC.index
 
 # Home page
 *     /aviones                            		Aviones.index
