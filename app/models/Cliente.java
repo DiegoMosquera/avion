@@ -14,4 +14,10 @@ public class Cliente extends Model {
 	public String telefono;
 	public String celular;
 	public String correo;
+	
+	public String toString(){
+		return cedula+" "+nombre+" "+apellido;
+	}
 }
+
+

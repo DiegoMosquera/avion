@@ -12,4 +12,8 @@ public class Avion extends Model  {
 	public String serie;
 	@ManyToOne
 	public Aerolinea codaerolinea; 
+	
+	public String toString(){
+		return placa+" "+serie+" "+tipo;
+	}
 }

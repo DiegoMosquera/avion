@@ -17,6 +17,7 @@ GET     /public/                                staticDir:public
 # Home page
 *     /vuelos                              		Vuelos.index
 
+<<<<<<< HEAD
 # Reserva page
 GET     /registrar                                      Usuarios.registrar
 
@@ -28,3 +29,19 @@ GET     /registrar                                      Usuarios.registrar
 
 # Import Secure routes
 *      /                module:secure
+=======
+# Home page
+*     /categorias                             	Categorias.index
+
+# Home page
+*     /aviones                            		Aviones.index
+
+# Catch all
+*       /{controller}/{action}                  {controller}.{action}
+#para crud
+
+*   	/admin									module:crud
+
+#para secure
+*		/										module:secure
+>>>>>>> aae92803a5c674bacde532c2a8945cf70eb54fab
