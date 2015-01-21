@@ -15,9 +15,12 @@ GET     /public/                                staticDir:public
 *     /aerolineas                               Aerolineas.index
 
 # Home page
+*     /aerolinasc                               AerolinasC.index
+
+# Home page
 *     /vuelos                              		Vuelos.index
 
-<<<<<<< HEAD
+ HEAD
 # Reserva page
 GET     /registrar                                      Usuarios.registrar
 
