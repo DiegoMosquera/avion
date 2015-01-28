@@ -30,6 +30,8 @@ public class Usuarios extends Secure.Security {
 		nuevo.password=password;
 		nuevo.save();
 		
+		Mail m= new Mail(email,"Registro exitoso");
+		
 		flash.put("confirmacion",nuevo.nombre);
 		
 		}else {
@@ -38,7 +40,7 @@ public class Usuarios extends Secure.Security {
 		
 		redirect("/Usuarios/registrar");
 	}
-
+	
 
 	
 	
